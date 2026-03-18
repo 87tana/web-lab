@@ -1,32 +1,46 @@
+/* Base page style */
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DevOps Project</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-<body>
+/* Header */
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </nav>
+header {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
 
-  <button id="theme-toggle">Toggle Theme</button>
-</header>
+/* Navigation */
 
-<main>
-  <h1>Welcome to My DevOps Project</h1>
-  <p>This page demonstrates Git Flow and dark mode.</p>
-</main>
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
 
-<script src="script.js"></script>
+nav a {
+  color: white;
+  text-decoration: none;
+}
 
-</body>
-</html>
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+
+main {
+  padding: 20px;
+}
+
+/* Slogan style (exercise part) */
+
+.slogan {
+  color: #e91e63;
+  font-weight: bold;
+}
