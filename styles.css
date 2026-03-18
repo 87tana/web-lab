@@ -1,15 +1,26 @@
+/* Base page style */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
 
 header {
-  background: #2c3e50;
-  padding: 1rem 2rem;
+  background: #333;
+  color: white;
+  padding: 10px;
 }
+
+/* Navigation */
 
 nav ul {
   list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
   padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
@@ -19,18 +30,4 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-}
-
-/* Improve dark theme contrast */
-[data-theme="dark"] {
-  background: #121212;
-  color: #e0e0e0;  /* Better contrast */
-}
-
-[data-theme="dark"] header {
-  background: #1e2a36;  /* Darker for better contrast */
-}
-
-[data-theme="dark"] a {
-  color: #4fc3f7;  /* Brighter links */
 }
